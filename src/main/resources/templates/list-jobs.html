@@ -10,9 +10,9 @@
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
     <th:block th:each="job : ${jobs}">
-        <table th:each="data : ${job.toString()}" class="job-listing">
+        <table class="job-listing">
             <tr>
-                <th th:text="${data}">ID: </th>
+                <th>ID: </th>
                 <td th:text="${job.id}">
                 </td>
             </tr>
